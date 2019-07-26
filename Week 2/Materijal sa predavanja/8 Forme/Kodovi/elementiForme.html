@@ -1,0 +1,134 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style>
+		div 
+		{
+			display: block;
+			padding:5px 0px 10px 0px;
+		}
+		
+		#skriveno 
+		{
+			padding: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<form>
+		<fieldset>
+			<!-- Naslov odeljka ankete -->
+			<legend>Podaci o korisniku</legend>
+			
+			<!-- Unos tekstualnog sadržaja u polje -->
+			<div>
+				<label>Ime:</label>
+				<input type="text">
+			</div>
+			
+			<!-- Unos email-a -->
+			<div>
+				<label>Email: </label>
+				<input type="email">
+			</div>
+			
+			<!-- Unos osetljivih podataka -->
+			<div>
+				<label>Lozinka: </label>
+				<input type="password">
+			</div>
+			
+			<!-- Skriveno polje -->
+			<div id="skriveno">
+				<input type="hidden">
+			</div>
+			
+			<!-- Kriterijum pretrage -->
+			<div>
+				<label>Unos kriterijuma pretrage: </label>
+				<input type="search">
+			</div>
+			
+			<!-- Unos numeričkih podataka -->
+			<div>
+				<label>Unos brojeva: </label>
+				<input type="number">
+			</div>
+			
+			<!-- Unos numeričkih podataka sa donjom granicom min,gornjom granicom max i stepenom promene step-->
+			<div>
+				<label>Unos numeričkih podataka sa ograničenjem: </label>
+				<input type="number" min="1" max="25" step="0.3">
+			</div>
+			
+			<!-- Unos url adrese-->
+			<div>
+				<label>URL adresa: </label>
+				<input type="url">
+			</div>
+			
+			<!-- Unos datuma-->
+			<div>
+				<label>Unos datuma: </label>
+				<input type="date">
+			</div>
+			
+			<!-- Unos datuma sa početnim datumom min, krajnjim datumom max i brojem dana između njih step-->
+			<div>
+				<label>Unos datuma sa ograničenjima: </label>
+				<input type="date" min="2017-03-01" max="2019-05-01" step="3">
+			</div>
+			
+			<!-- Unos vremena -->
+			<div>
+				<label>Unos vremena: </label>
+				<input type="time">
+			</div>
+			
+			<!-- Radio button-->
+			<div>
+				<label>Odaberite pol: </label>
+				<input type="radio" value="n" name="pol" checked>Neodređen
+				<input type="radio" value="z" name="pol">Žensko
+				<input type="radio" value="m" name="pol">Muško
+			</div>
+			
+			<!-- Checkbox-->
+			<div>
+				<label>Odaberite kurs: </label>
+				<input type="checkbox" value="html" name="kurs">HTML
+				<input type="checkbox" value="css" name="kurs">CSS
+				<input type="checkbox" value="php" name="kurs" checked>PHP
+			</div>
+			
+			<!-- Odabir boje pomoću color polja -->
+			<div>
+				<label>Odabir boje: </label>
+				<input type="color" value="#ff0000">
+			</div>
+			
+			<!-- Odabir datoteke -->
+			<div>
+				<label>Odabir datoteke: </label>
+				<input type="file">
+			</div>
+			
+			<!-- Dugme -->
+			<div>
+				<input type="button" value="Pozdrav" onclick="alert('Poydrav!!! :)')">
+			</div>
+			
+			<!-- Resetovanje -->
+			<div>
+				<input type="reset" value="Reset!">
+			</div>
+			
+			<!-- Slanje sadržaja na server - submit -->
+			<div>
+				<input type="submit" value="Submit">
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>

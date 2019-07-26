@@ -1,0 +1,26 @@
+	
+		ul
+			{font-family: calibri;
+			font-size: 25px;
+			list-style-type: none;
+			background-color: #62858c;
+			width: 120px;
+			margin: 0;
+			padding: 0;
+			}
+		
+		li
+		{
+		padding: 20px
+		}
+		
+		li:hover
+			{
+			background-color: white;
+			}
+		
+		a
+		{
+		text-decoration: none;
+		}
+	

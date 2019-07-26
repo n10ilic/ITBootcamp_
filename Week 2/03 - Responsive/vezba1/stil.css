@@ -1,0 +1,162 @@
+*
+{
+	box-sizing: border-box;
+}
+
+.row:before
+.row:after
+	{
+		display: table;
+		content: "";
+		clear: both;
+	}
+
+[class*="col-"] /*za elemente cija klasa sadrzi ime col-*/
+{	
+	float:left;
+	width: 100%;
+	padding: 0;
+}
+
+[class*="col-"] /*za slike cija klasa sadrzi ime col-*/
+img
+{
+	width: 100%;
+	
+}
+
+[class*="col-"]:hover img /*kada se preko slike predje misem da daje opacity*/
+{
+	opacity: 0.75;
+}
+
+body
+{
+	margin: 0;
+}
+
+.navbar
+{
+	background-color: #61513a;
+	margin-bottom: 10px;
+}
+
+.navbar ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.navbar li
+{
+	display: block;
+}
+
+.navbar a
+{
+	display: block;
+	text-decoration: none;
+	padding: 14px 20px;
+	color: white;
+	text-align: center;
+}
+
+.navbar a:hover
+{
+	background-color: #b1d433;
+	color: black;
+}
+
+@media only screen and (min-width: 600px) /*primenjuju se odredjeni, posebni stilovi*/
+{
+		.navbar li
+		{
+			float: left;
+		}
+		
+		.col-1
+		{
+			width: 8.33%;
+		}
+		
+		.col-2
+		{
+			width: 16.66%;
+		}
+		
+		.col-3
+		{
+			width: 25%;
+		}
+		
+		.col-4
+		{
+			width: 33.33%;
+		}
+		
+		.col-5
+		{
+			width: 41.66%;
+		}
+		
+		.col-6
+		{
+			width: 50%;
+		}
+		
+		.col-7
+		{
+			width: 58.33;
+		}
+		
+		.col-8
+		{
+			width: 66.66%
+		}
+		
+		.col-9
+		{
+			width: 75%;
+		}
+		
+		.col-10
+		{
+			width: 83.33%;
+		}
+		
+		.col-11
+		{
+			width: 91.66%;
+		}
+		
+		.col-12
+		{
+			width: 100%;
+		}
+		
+		[class*="col-"]
+		{
+			float: left;
+			padding: 15px; /*razmak izmedju kolona*/
+		
+		}
+}
+
+/*
+Opsti oblik selektora:
+[attr="vrednonst"]{}-svi elementi koji imaju atribut podesen an odredjenu vrednost
+
+Primer:
+	[href="http://www.google.com"] - ovo selektuje sve tagove koji imaju atribut href, cija je vrednost zadata
+	div a[href="http://www.google.com"] - ovo su svi linkovi koji imaju att href sa zadatom vrednoscu, a koji su u div-u, tj ciji je parrent div
+	
+	[attr*="vrednost"] - svi el. vrednost atr. sadrzi zadatom vrednoscu
+	[attr~="vrednost"] - svi el. cija vrednost atr. sadrzi zadatu vrednost
+	razlika izmedju ove dve varijante je da se u drugoj mora naci cela rec
+	
+	Generalno, u programiranju * zamenjuje deo neke reci...
+	
+	
+*/

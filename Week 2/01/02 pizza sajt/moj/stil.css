@@ -1,0 +1,93 @@
+body
+	{font-family: arial; calibri; georgian;
+	font-size: 15px;
+	color: blue;
+	margin: 0;
+	padding: 0;
+	}
+
+
+.topbar
+	{
+		position: fixed;
+		top: -15px;
+		width: 100%;
+		height: 40px;
+	}
+
+.topbar ul
+	{
+		background-color: orange;
+		padding: 0;
+		font-size: 15px;
+		color: black;
+		list-style-type: none;
+		overflow: hidden;
+	}
+	
+.topbar ul:hover
+{
+	background-color: orange;
+}
+
+.bottombar
+	{
+		position: fixed;
+		bottom: 32;
+		width: 100%;
+		height: 20px;
+	}
+
+.bottombar ul
+	{
+		background-color: red;
+		padding: 0;
+		font-size: 15px;
+		list-style-type: none;
+		overflow: hidden;
+		
+	}
+.bottombar ul:hover
+{
+	background-color: orange;
+}
+
+
+div ul li
+	{
+		float: left;
+		width: 24.85%;
+		text-align: center;
+		border-left: 2px; solid black;
+		border-top: 2px solid black;
+		border-right: 2px solid black;
+		border-bottom: 2px solid black;
+	}
+	
+a
+	{
+		color: blue;
+	}
+	
+div ul a
+{
+	display: block;
+	text-decoration: none;	
+	height: 100%;
+	padding: 7px 0;
+
+}
+
+div ul a:hover
+{
+	background-color: blue;
+}
+
+
+div ul a:active
+{
+	border-top: 0px solid yellow;
+	color: yellow;
+	font-weight: bold;
+	
+}

@@ -1,0 +1,128 @@
+<html>
+	<head>
+		<style>
+		
+			body
+			{background-color: #f5ffc2;
+			font-family: verdana; calibri;
+			color: #2c3645;
+			}
+			div
+			{
+				padding: 15px 0px 15px 15px;
+			}
+			
+			#pol:active
+			{
+			color: #485870;
+			}
+			
+			#informacije
+			{
+				width:45%;
+				background-color: #f7f5c6;
+			}
+			#fildset2
+			{
+				width:45%;
+				background-color: #e7edc7;
+				
+			}
+			
+			input
+			{
+				background-color: #edfcff;
+			}
+			
+			textarea
+			{
+				background-color: #edfcff;
+			}
+			
+		</style>
+	</head>
+<body>
+	<form>
+		<fieldset id="informacije">
+			<legend>Informacije</legend>
+				<div>
+					<label>Ime:</label>
+					<input type="text">
+				</div>
+				
+				<div>
+					<label>Korisnicko ime:</label>
+					<input type="text">
+				</div>
+				
+				<div>
+					<label>Sifra:</label>
+					<input type="password">
+				</div>
+				
+				<div>
+					<label>Ponovite unos sifre:</label>
+					<input type="password">
+				</div>
+				
+				<div id="pol">
+						<label>Pol:</label><br>
+						<input type="radio" name="pol" value="n" checked>Neopredeljen<br>
+						<input type="radio" name="pol" value="m" checked>Muski<br>
+						<input type="radio" name="pol" value="z" checked>Zenski<br>
+				</div>
+				
+				<div>
+						<label>Odaberite kurs:</label>
+						<input type="checkbox" name="kurs" value="java" checked>JAVA
+						<input type="checkbox" name="kurs" value="android" checked>ANDROID
+						<input type="checkbox" name="kurs" value="ruby" checked>RUBY
+						<input type="checkbox" name="kurs" value="net" checked>NET
+				</div>
+				
+				<div>
+					<label>Kontakt tel:</label>
+					<input type="number">
+				</div>
+				
+				<div>
+					<label>Email:</label>
+					<input type="text">
+				</div>
+				
+				
+				
+				<form action="/action_page.php" id="Obrazovanje">
+						 Ime škole/fakulteta:<input type="text" name="fname">
+						
+				</form>
+				
+				<select name="Obrazovanje" form="lista">
+					<option value="SSSS">SSSS</option>
+					<option value="V stepen">V stepen</option>
+					<option value="VI stepen">VI stepen</option>
+					<option value="VII stepen">VII stepen</option>
+				</select>
+					
+				<div>
+					<label>CV:</label>
+					<input type="file">
+				</div>
+					
+				<div>
+					<input type="submit" value="Potvrdi"/>
+				</div>	
+				
+				
+			</fieldset>
+			<fieldset id="fildset2">
+			<div>
+					Dodatno o sebi (opciono):
+					<textarea rows="15" cols="80">
+						
+					</textarea>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>

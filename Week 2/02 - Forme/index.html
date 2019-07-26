@@ -1,0 +1,130 @@
+<html>
+	<head>
+		<style>
+			div
+			{
+				padding: 5px 0px 5px 5px;
+			}
+			
+			#nevidljivo
+			{
+				padding: 0;
+			}
+			
+			#informacije
+			{
+				width:50%;
+			}
+			
+			
+			
+		</style>
+	</head>
+
+	<body>
+		<form>
+			<fieldset id="informacije">
+				<legend>Informacije</legend>
+					<div> <!--unosenje obicnog sadrzaja-->
+						<label>Ime: </label>
+						<input type="text">
+					</div>
+					
+					<div>	<!--unosenje osetljivog sadrzaja-->
+						<label>Lozinka: </label>
+						<input type="password">
+					</div>
+					
+					<div id="nevidljivo">	<!--unosenje nevidljivog sadrzaja-->
+						<input type="hidden">
+					</div>
+					
+					<div>	<!--polje za pretragu-->
+						<label>Pretrazi: </label>
+						<input type="search">
+					</div>
+					
+					<div>	<!--polje za e-mail-->
+						<label>Email: </label>
+						<input type="email">
+					</div>
+					
+					<div>	<!--polje za url adresu-->
+						<label>URL adresa: </label>
+						<input type="url">
+					</div>
+					
+					<div>	<!--polje za unos datuma-->
+						<label>Unos datuma: </label>
+						<input type="date">
+					</div>
+					
+					<div>	<!--polje za unos datuma sa ogranicenim pocetnim i krajnjim datumom-->
+						<label>Unos datuma (og. verzija): </label>
+						<input type="date" min="2010-01-01" max="2020-01-01" step="3"><!--step znaci da svaki treci dan moze da se odabere-->
+					</div>
+					
+					<div>	<!--polje za unos vremena-->
+						<label>Unos vremena: </label>
+						<input type="time">
+					</div>
+					
+					<div>	<!--polje za unos numerickih podataka-nemoguce je unositi slova, vec samo brojeve-->
+						<label>Unos brojeva: </label>
+						<input type="number">
+					</div>
+					
+					<div>	<!--polje za unos numerickih podataka-nemoguce je unositi slova, vec samo brojeve,
+							ogranicenje na min i max, i stepenovanje brojeva na kliktanje na strelicu-->
+						<label>Unos brojeva: </label>
+						<input type="number" min="0" max="10" step="2">
+					</div>
+					
+					<!--poravnanje inputa je u stilu-->
+					
+					
+					
+					<div><!--Radio button-sekejtuje samo jednu vrednost-->
+						<label>Odaberite pol:</label>
+						<input type="radio" name="pol" value="n" checked>Neopredeljen
+						<input type="radio" name="pol" value="m" checked>Muski
+						<input type="radio" name="pol" value="z" checked>Zenski
+					</div>
+					
+					<div><!--Checkbox-Cekiranje vise opcija-->
+						<label>Odaberite kurs:</label>
+						<input type="checkbox" name="kurs" value="html" checked>HTML
+						<input type="checkbox" name="kurs" value="css" checked>CSS
+						<input type="checkbox" name="kurs" value="js" checked>JavaScript
+						<input type="checkbox" name="kurs" value="php" checked>PHP
+					</div>
+						
+					<div>	<!--odabir boje-->
+						<label>Odaberite boju: </label>
+						<input type="color" value="#ff0000">
+					</div>
+					
+					<div>	<!--odabir fajla-->
+						<label>Odaberite fajl: </label>
+						<input type="file">
+					</div>
+					
+					<div>	<!--klasicno dugme-->
+							<input type="button" value="Klikni">
+					</div>
+					
+					<div>	<!--alert dugme-->
+							<input type="button" value="Alert" onclick="alert('Pozdrav!')"/>
+					</div>	
+					
+					<div>	<!--reset dugme - resetuje celu stranicu-->
+							<input type="reset" value="Reset"/>
+					</div>
+					
+					<div>	<!--submit-slanje sadrzaja na server, tj. dugme za potvrdu-->
+							<input type="submit" value="Potvrdi"/>
+					</div>	
+			</fieldset>
+		</form>
+	</body>
+</html>

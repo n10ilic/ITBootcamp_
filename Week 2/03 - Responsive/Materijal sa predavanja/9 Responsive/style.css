@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+}
+
+.row:before,
+.row:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.row {
+	display: block;
+	width: 100%;
+	padding: 0 8px;
+}
+
+[class*="col-"] {
+	float: left;
+	width: 100%;
+	padding: 0;
+}
+
+[class*="col-"] img {
+	width: 100%;
+}
+
+[class*="col-"]:hover img {
+	opacity: 0.8;
+}
+
+body {
+	margin: 0;
+}
+
+.navbar {
+	background-color: #333;
+	margin-bottom: 10px;
+}
+
+.navbar ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.navbar li {
+	display: block;
+}
+
+.navbar a {
+	display: block;
+	text-decoration: none;
+	padding: 14px 20px;
+	color: white;
+	text-align: center;
+}
+
+.navbar a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+@media only screen and (min-width: 600px) {
+	.navbar li {
+		float: left;
+	}
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+	[class*="col-"] {
+		float: left;
+		padding: 15px;
+	}
+}
+
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=text]:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid #555;
+    outline: none;
+}
+
+
+/*
+Opsti oblik selektora:
+[attr="vrednost"] {
+} - svi elementi koji imaju atribut podesen na odredjenu vrednost
+
+Primer: 
+  [href="http://www.google.com"] - svi tagovi koji imaju attr. href sa zadatom vrednoscu
+  div a[href="http://www.google.com"] - svi linkovi koji imaju attr. href sa zad.vrednoscu
+										a koji se nalaze u div-u
+	[attr*="vrednost"] - svi el. vrednost atr. sadrzi zad.vr. (ne cela rec) "vr" => "avrd"
+	[attr~="vrednost"] - svi el. vrednost atr. sadrzi zad.vr. (cela rec) "vr" => "vr-.."
+	
+*/
